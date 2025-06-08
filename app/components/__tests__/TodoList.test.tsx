@@ -58,7 +58,7 @@ describe("TodoList Component", () => {
     // TODO: Implementar el test siguiendo el patrón Prepare, Execute, Validate
     // Pista: Deberás modificar el mock de TodoItem para verificar que recibe las props correctas
 
-    // Prepare: Configuración con lista de tareas
+    // Preparar: Configuración con lista de tareas
     const todos: Todo[] = [
       { id: 1, text: "Tarea 1", completed: false },
       { id: 2, text: "Tarea 2", completed: true },
@@ -67,7 +67,7 @@ describe("TodoList Component", () => {
     const mockToggle = jest.fn();
     const mockDelete = jest.fn();
 
-    // Executar: Renderizar el componente
+    // Ejecutar: Renderizar el componente
     render(
       <TodoList
         todos={todos}

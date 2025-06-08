@@ -80,7 +80,7 @@ describe("TodoForm Component", () => {
     // TODO: Implementar el test siguiendo el patrón Prepare, Execute, Validate
     // Pista: Debes verificar que "  Texto con espacios  " se convierta en "Texto con espacios"
 
-    // Prepare el mock
+    // Preparar el mock
     const mockAddTodo = jest.fn();
 
     // Ejecutar

@@ -79,5 +79,25 @@ describe("TodoForm Component", () => {
   it("llama a onAddTodo con el texto recortado (sin espacios al inicio/final)", () => {
     // TODO: Implementar el test siguiendo el patrón Prepare, Execute, Validate
     // Pista: Debes verificar que "  Texto con espacios  " se convierta en "Texto con espacios"
+
+    // Prepare el mock
+    const mockAddTodo = jest.fn();
+
+    // Ejecutar
+    render(<TodoForm onAddTodo={mockAddTodo}/>);
+
+    const inputElement = screen.getByTestId("todo-input");
+    const inputValue = "   Texto con espacios   ";
+
+    fireEvent.change(inputElement, {target:{value: inputValue}});
+
+    const formElement = screen.getByTestId("todo-form");
+
+    fireEvent.submit(formElement);
+    
+    // Validaciones
+    expect(inputElement).toBeInTheDocument();
+    expect(formElement).toBeInTheDocument();
+    expect(mockAddTodo).toHaveBeenLastCalledWith("Texto con espacios");
   });
 });

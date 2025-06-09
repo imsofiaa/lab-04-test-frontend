@@ -4,16 +4,17 @@ A mi me ha tocado realizar la historia de usuario "Boticas", esta historia solo 
 
 ## Happypath:
 
-Validar que se renderice los datos 
-Validar que el boton de eliminar borre todos los rastros de la botica (detalles, medicamentos)
-Validar que se guarde los datos editados de la botica
-Validar que se cree correctamente la nueva botica desde el boton crear
-Validar que solo se pueda ver la pestaña botica se pueda ver desde una cuenta de Admin
+- Validar que se renderice los datos 
+- Validar que el boton de eliminar borre todos los rastros de la botica (detalles, medicamentos)
+- Validar que se guarde los datos editados de la botica
+- Validar que se cree correctamente la nueva botica desde el boton crear
+- Validar que solo se pueda ver la pestaña botica se pueda ver desde una cuenta de Admin
 
 ## Unhappypath:
-Validar que no se pueda crear una nueva botica si todos los campos necesarios no estan llenos
-Validar que no se pueda modificar la botica en caso se deje un campo vacio en la vista de "editar botica"
-Validar que no se guarde las modificaciones en caso se inserte caracteres no permitidos en los campos
+
+- Validar que no se pueda crear una nueva botica si todos los campos necesarios no estan llenos
+- Validar que no se pueda modificar la botica en caso se deje un campo vacio en la vista de "editar botica"
+- Validar que no se guarde las modificaciones en caso se inserte caracteres no permitidos en los campos
 
 
 # Laboratorio 04: Pruebas Unitarias con Jest en React

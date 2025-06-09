@@ -1,3 +1,21 @@
+# Historia de usuario: Boticas
+
+A mi me ha tocado realizar la historia de usuario "Boticas", esta historia solo sera visible desde la vista del Admin donde se quiere tener una pestaña donde se muestre una lista con todas las boticas asociadas. Cada botica tiene que tener un boton que permita editar los datos de la misma y un boton que deje eliminar la botica, eliminando tambien los medicamentos asociadas. A parte tiene que haber un boton que permita crear una nueva botica con todos los datos necesarios.
+
+## Happypath:
+
+Validar que se renderice los datos 
+Validar que el boton de eliminar borre todos los rastros de la botica (detalles, medicamentos)
+Validar que se guarde los datos editados de la botica
+Validar que se cree correctamente la nueva botica desde el boton crear
+Validar que solo se pueda ver la pestaña botica se pueda ver desde una cuenta de Admin
+
+## Unhappypath:
+Validar que no se pueda crear una nueva botica si todos los campos necesarios no estan llenos
+Validar que no se pueda modificar la botica en caso se deje un campo vacio en la vista de "editar botica"
+Validar que no se guarde las modificaciones en caso se inserte caracteres no permitidos en los campos
+
+
 # Laboratorio 04: Pruebas Unitarias con Jest en React
 
 Este laboratorio tiene como objetivo proporcionar una introducción práctica a las pruebas unitarias en aplicaciones React utilizando Jest y React Testing Library.
